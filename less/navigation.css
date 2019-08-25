@@ -2,14 +2,20 @@ header {
   position: fixed;
   width: 100vw;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  width: 40vw;
 }
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: red 0.6;
-  width: 70vw;
+  border-radius: 0px 0px 0px 10px;
+  width: 60vw;
 }
 header nav a {
   color: slategray;

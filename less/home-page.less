@@ -43,8 +43,36 @@
 }
 .middle-content {
     .top {
-        height: 50vh;
+        height: 45vh;
         background-color: palegreen;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: wrap;
+        .about {
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .options {
+            width: 50vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .lend {
+                width: 20vw;
+            }
+            .borrow {
+                width: 20vw;
+            }
+        }
+        h3 {
+            font-size: 3.5rem;
+        }
+        p {
+            font-size: 2rem;
+        }
     }
     .bottom {
         height: 50vh;
