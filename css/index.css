@@ -122,3 +122,239 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: black;
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+.top-content {
+  height: 100vh;
+  background-image: url("/images/top-content.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+.top-content .left-content {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5vw;
+}
+.top-content .left-content h1 {
+  text-align: center;
+  font-size: 7rem;
+  line-height: 10rem;
+  color: whitesmoke;
+  text-shadow: 3px 2px black;
+}
+.top-content .right-content {
+  display: flex;
+  width: 50vw;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5vw;
+}
+.top-content .button :hover {
+  background-color: black;
+  color: white;
+}
+.top-content .button a {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 3rem;
+  text-decoration: none;
+}
+.middle-content .top {
+  height: 50vh;
+  background-color: palegreen;
+}
+.middle-content .bottom {
+  height: 50vh;
+  background-image: url("/images/middle-content.png");
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.middle-content .bottom i {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 18vw;
+  font-size: 8rem;
+  color: palegreen;
+  text-shadow: 3px 2px black;
+}
+.middle-content .bottom i a {
+  font-size: 5rem;
+  text-decoration: none;
+  color: white;
+}
+.middle-content .bottom i :hover {
+  font-size: 5rem;
+}
+.middle-content .bottom :hover {
+  font-size: 18rem;
+  color: palegreen;
+}
+.bottom-content .top {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bottom-content .top .features {
+  align-items: center;
+  width: 30vw;
+}
+.bottom-content .top .features i {
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  color: palegreen;
+  padding: 4vh;
+}
+.bottom-content .top .features h4 {
+  text-align: center;
+}
+.bottom-content .top .features p {
+  font-size: 1.7rem;
+}
+.bottom-content .bottom {
+  height: 90vh;
+}
+.bottom-content .bottom p {
+  width: 35vw;
+}
+.bottom-content .bottom .top-row {
+  height: 45vh;
+  display: flex;
+}
+.bottom-content .bottom .top-row .half1 {
+  width: 50vw;
+  height: 100%;
+  background-image: url("/images/vr-headset.png");
+  background-size: cover;
+}
+.bottom-content .bottom .top-row .half2 {
+  width: 50vw;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.bottom-content .bottom .bottom-row {
+  height: 45vh;
+  display: flex;
+}
+.bottom-content .bottom .bottom-row .half3 {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+.bottom-content .bottom .bottom-row .half4 {
+  width: 50vw;
+  height: 100%;
+  background-image: url("/images/drone-flying.png");
+  background-size: cover;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10vh;
+}
+.title h2 {
+  font-size: 6rem;
+}
+.title h3 {
+  text-decoration: underline;
+}
+footer {
+  background-color: palegreen;
+  height: 30vh;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  padding: 25px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+footer :hover {
+  color: white;
+}
+header {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  width: 40vw;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0px 0px 0px 10px;
+  width: 60vw;
+}
+header nav a {
+  color: slategray;
+  font-size: 3rem;
+  line-height: 7rem;
+  width: 120%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+header nav a:hover {
+  color: white;
+  background-color: black;
+}

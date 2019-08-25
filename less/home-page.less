@@ -1,0 +1,176 @@
+
+.top-content {
+    height: 100vh;
+    background-image: url("/images/top-content.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    .left-content {
+        display: flex;
+        width: 50vw;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 5vw;
+        h1{
+            text-align: center;
+            font-size: 7rem;
+            line-height: 10rem;
+            color: whitesmoke;
+            text-shadow: 3px 2px black;
+        }
+    }
+    .right-content {
+        display: flex;
+        width: 50vw;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 5vw;
+    }
+    .button {
+        :hover {
+            background-color: black;
+            color: white;
+        }
+        a {
+            padding: 15px;
+            border-radius: 10px;
+            background-color: white;
+            font-size: 3rem;
+            text-decoration: none;
+        }
+    }
+}
+.middle-content {
+    .top {
+        height: 50vh;
+        background-color: palegreen;
+    }
+    .bottom {
+        height: 50vh;
+        background-image: url("/images/middle-content.png");
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        i {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 18vw;
+            font-size: 8rem;
+            color: palegreen;
+            text-shadow: 3px 2px black;
+            a {
+                font-size: 5rem;
+                text-decoration: none;
+                color: white;
+            }
+            :hover {
+                font-size: 5rem;
+            }
+        }
+        :hover {
+            font-size: 18rem;
+            color: palegreen;
+        }
+    }
+}
+.bottom-content {
+    .top {
+        height: 80vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        .features {
+            align-items: center;
+            width: 30vw;
+            i {
+                font-size: 6rem;
+                display: flex;
+                justify-content: center;
+                color: palegreen;
+                padding: 4vh;
+            }
+            h4 {
+                text-align: center;
+            }
+            p {
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .bottom {
+        height: 90vh;
+        p {
+            width: 35vw;
+        }
+        .top-row {
+            height: 45vh;
+            display: flex;
+            .half1 {
+                width: 50vw;
+                height: 100%;
+                background-image: url("/images/vr-headset.png");
+                background-size: cover;
+            }
+            .half2 {
+                width: 50vw;
+                height: 100%;
+                flex-direction: column;
+                display: flex;
+                justify-content: center;        
+            }
+        }
+        .bottom-row {
+            height: 45vh;
+            display: flex;
+            .half3 {
+                width: 50vw;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                text-align: right;
+            }
+            .half4 {
+                width: 50vw;
+                height: 100%;
+                background-image: url("/images/drone-flying.png");
+                background-size: cover;
+            }
+        }
+    }
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+    h2 {
+        font-size: 6rem;
+    }
+    h3 {
+        text-decoration: underline;
+    }
+}
+footer {
+    background-color: palegreen;
+    height: 30vh;
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    a {
+        padding: 25px;
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+    }
+    :hover {
+        color: white;
+    }
+}
