@@ -1,0 +1,26 @@
+header {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: red 0.6;
+  width: 70vw;
+}
+header nav a {
+  color: slategray;
+  font-size: 3rem;
+  line-height: 7rem;
+  width: 120%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+header nav a:hover {
+  color: white;
+  background-color: black;
+}
