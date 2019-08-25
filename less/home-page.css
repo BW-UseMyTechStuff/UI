@@ -147,6 +147,12 @@
   display: flex;
   justify-content: center;
 }
+.bottom-content .bottom .top-row .half2 div {
+  background-color: palegreen;
+  margin-left: -5vw;
+  z-index: 100;
+  width: 35vw;
+}
 .bottom-content .bottom .bottom-row {
   height: 45vh;
   display: flex;
@@ -158,6 +164,12 @@
   justify-content: flex-end;
   align-items: center;
   text-align: right;
+}
+.bottom-content .bottom .bottom-row .half3 div {
+  background-color: palegreen;
+  margin-right: -5vw;
+  z-index: 100;
+  width: 35vw;
 }
 .bottom-content .bottom .bottom-row .half4 {
   width: 50vw;
