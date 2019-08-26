@@ -202,6 +202,7 @@ p {
   display: flex;
   justify-content: space-around;
   flex-direction: wrap;
+  text-align: center;
 }
 .middle-content .top .about {
   width: 30vw;
@@ -218,9 +219,39 @@ p {
 }
 .middle-content .top .options .lend {
   width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.middle-content .top .options .lend .button {
+  padding: 30px;
+}
+.middle-content .top .options .lend .button a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  background: white;
+  padding: 20px;
+  border-radius: 30px;
 }
 .middle-content .top .options .borrow {
   width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.middle-content .top .options .borrow .button {
+  padding: 30px;
+}
+.middle-content .top .options .borrow .button a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  background: white;
+  padding: 20px;
+  border-radius: 30px;
 }
 .middle-content .top h3 {
   font-size: 3.5rem;
@@ -350,7 +381,7 @@ p {
 }
 footer {
   background-color: palegreen;
-  height: 30vh;
+  height: 15vh;
 }
 footer nav {
   display: flex;
