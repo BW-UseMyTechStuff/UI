@@ -223,6 +223,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
 .middle-content .top .options .lend .button {
   padding: 30px;
@@ -241,6 +242,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
 .middle-content .top .options .borrow .button {
   padding: 30px;
@@ -260,7 +262,7 @@ p {
   font-size: 2rem;
 }
 .middle-content .bottom {
-  height: 50vh;
+  height: 55vh;
   background-image: url("/images/middle-content.png");
   background-attachment: fixed;
   display: flex;
@@ -286,7 +288,7 @@ p {
   font-size: 5rem;
 }
 .middle-content .bottom :hover {
-  font-size: 18rem;
+  font-size: 10rem;
   color: palegreen;
 }
 .bottom-content .top {
