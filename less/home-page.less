@@ -6,20 +6,15 @@ body {
         background-size: cover;
         background-attachment: fixed;
         display: flex;
-        align-items: center;
         @media @laptop {
-            flex-direction: column;
-            justify-content: center;
+            .flexProps(center, center, column)
         }
         @media @tablet {
             background-image: none;
-            background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            background-image: @gradient-background;
         }
         .call2action-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            .flexProps(center, center, column);
             width: 50vw;
             animation: bounceIn 2s;
             @media @tablet {
@@ -32,7 +27,7 @@ body {
                 font-size: 7rem;
                 text-align: center;
                 color: white;
-                filter: drop-shadow(5px 5px 5px #222);
+                .dropShadow(5px, 5px, 5px, @grey-neutral);
             }
         }
     }
@@ -40,26 +35,21 @@ body {
         .top-features {
             height: 50vh;
             background-color: white;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            .fullCenter(row);
             margin-top: 5vh;
             .top-text {
                 width: 40vw;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: flex-end;
+                .flexProps(space-around, flex-end, column);
                 div {
                     width: 30vw;
                     text-align: center;
                     h2 {
                         font-size: 5rem;
-                        filter: drop-shadow(1px 1px 1px @primary-color);
+                        .dropShadow(1px, 1px, 1px, @accent-color);;
                     }
                     p {
                         padding: 5%;
-                        filter: drop-shadow(1px 1px 1px #222);
+                        .dropShadow(1px, 1px, 1px, @accent-color);
                     }
                     @media @tablet {
                         width: 40vw;
@@ -70,13 +60,11 @@ body {
             }
             .top-image {
                 width: 40vw;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
+                .flexProps(flex-start, flex-end, row);
                 padding-top: 10vh;
                 img {
                     width: 60%;
-                    filter: drop-shadow(1px 1px 1px @primary-color);
+                    .dropShadow(1px, 1px, 1px, @primary-color);
                     @media @laptop {
                         width: 80%;
                     }
@@ -93,18 +81,17 @@ body {
         .bottom-features {
             margin-top: 5vh;
             height: 45vh;
-            display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            .flexProps(center, flex-start, row);
             .features {
-                display: flex;
-                justify-content: center;
+                .flexProps(center, flex-start, row);
                 width: 40%;
                 @media @tablet {
                     width: 45%;
                 }
                 @media @phone {
                     width: 90%;
+                    
                 }
                 i {
                     color: @accent-color;
@@ -121,7 +108,7 @@ body {
                     font-size: 2.2rem;
                     line-height: 1.5;
                     padding: 2.5vw;;
-                    filter: drop-shadow(1px 1px 1px #222);
+                    .dropShadow(1px, 1px, 1px, @accent-color);
                     @media @laptop {
                         font-size: 1.6rem;
                         padding: 1vw;
@@ -138,21 +125,19 @@ body {
         background-image: url("/images/new-tech.png");
         background-size: cover;
         height: 50vh;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        .fullCenter(row);
         color: white;
         @media @tablet {
+            display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+            .flexProps(space-evenly, center, column);
             background-image: none;
-            background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            background-image: @gradient-background;
         }
         .options-text {
             width: 60vw;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+            .fullCenter(column);
             text-align: center;
             @media @laptop {
                 width: 70vw;
@@ -160,27 +145,24 @@ body {
             h3 {
                 color: white;
                 font-size: 6rem;
-                filter: drop-shadow(5px 5px 5px #222);
+                .dropShadow(5px, 5px, 5px, @grey-neutral);
             }
             p {
                 max-width: 65ch;
             }
         }
         .options-select {
-            display: flex;
-            justify-content: space-around;
+            .flexProps(space-around, flex-start, row);
             margin-right: 30px;
             @media @tablet {
                 margin-right: 0px;
-                justify-content: center;
-                align-items: center;
+                .flexProps(center, center, row);
             }
             .rent {
                 width: 20vw;
                 @media @tablet {
                     width: 40vw;
-                    display: flex;
-                    justify-content: center;
+                    .flexProps(center, center, row);
                 }
             }
             .lend {
@@ -188,28 +170,23 @@ body {
                 @media @tablet {
                     width: 40vw;
                     width: 40vw;
-                    display: flex;
-                    justify-content: center;
+                    .flexProps(center, center, row);
                 }
             }
         }
     }
     .team {
-        padding-top: 5vh;
+        padding-top: 7vh;
         height: 100vh;
-        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-        display: flex;
+        background-image: @gradient-background;
         flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        .flexProps(space-around, center, row);
         overflow: auto;
         @media @tablet {
             padding-top: 10vh;
         }
         .teamMember {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            .fullCenter(column);
             width: 18vw;
             animation: bounceIn 2s;
 
@@ -233,20 +210,27 @@ body {
                     padding-top: 5vh;
                 }
             }
+            div {
+                img {
+                    width: 5vw;
+                    padding-top: 1vh;
+                    &:hover {
+                        filter: invert(100%);
+                    }
+                }
+            }
         }
         h3 {
             font-size: 3rem;
             color: white;
-            filter: drop-shadow(5px 5px 5px #222);
+            .dropShadow(5px, 5px, 5px, @grey-neutral);
             text-align: center;
         }
     }
     .testimonials {
         background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
         height: 50vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .fullCenter(row);
         h3 {
             color: white;
         }
@@ -258,8 +242,7 @@ body {
             font-size: 4rem;
         }
         .test {
-            display: flex;
-            align-items: center;
+            .fullCenter(row);
             border-radius: 10px;
             width: 25vw;
             height: 30vh;

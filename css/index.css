@@ -175,12 +175,7 @@ a {
   padding: 2vh 4vw;
   text-decoration: none;
   text-shadow: 0px 1px 0px #2E2F38;
-  filter: drop-shadow(5px 5px 5px #222);
-}
-@media (max-width: 800px) {
-  .myButton {
-    padding: 5% 20%;
-  }
+  filter: drop-shadow(5px 5px 5px #2E2F38);
 }
 .myButton:hover {
   background-color: #5cbf2a;
@@ -189,6 +184,11 @@ a {
   position: relative;
   top: 1px;
 }
+@media (max-width: 800px) {
+  .myButton {
+    padding: 5% 20%;
+  }
+}
 body .call2action {
   background-color: #E9B40A;
   height: 100vh;
@@ -196,12 +196,13 @@ body .call2action {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  align-items: center;
 }
 @media (max-width: 1200px) {
   body .call2action {
-    flex-direction: column;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 @media (max-width: 800px) {
@@ -212,9 +213,9 @@ body .call2action {
 }
 body .call2action .call2action-text {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 50vw;
   animation: bounceIn 2s;
 }
@@ -230,22 +231,23 @@ body .call2action .call2action-text h1 {
   font-size: 7rem;
   text-align: center;
   color: white;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #2E2F38);
 }
 body .features .top-features {
   height: 50vh;
   background-color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
   margin-top: 5vh;
 }
 body .features .top-features .top-text {
   width: 40vw;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
+  flex-direction: column;
 }
 body .features .top-features .top-text div {
   width: 30vw;
@@ -253,11 +255,11 @@ body .features .top-features .top-text div {
 }
 body .features .top-features .top-text div h2 {
   font-size: 5rem;
-  filter: drop-shadow(1px 1px 1px #E9B40A);
+  filter: drop-shadow(1px 1px 1px #085E27);
 }
 body .features .top-features .top-text div p {
   padding: 5%;
-  filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #085E27);
 }
 @media (max-width: 800px) {
   body .features .top-features .top-text div {
@@ -269,6 +271,7 @@ body .features .top-features .top-image {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  flex-direction: row;
   padding-top: 10vh;
 }
 body .features .top-features .top-image img {
@@ -293,13 +296,17 @@ body .features .top-features .top-image img {
 body .features .bottom-features {
   margin-top: 5vh;
   height: 45vh;
-  display: flex;
   flex-wrap: wrap;
+  display: flex;
   justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
 }
 body .features .bottom-features .features {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
   width: 40%;
 }
 @media (max-width: 800px) {
@@ -331,7 +338,7 @@ body .features .bottom-features .features p {
   font-size: 2.2rem;
   line-height: 1.5;
   padding: 2.5vw;
-  filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #085E27);
 }
 @media (max-width: 1200px) {
   body .features .bottom-features .features p {
@@ -350,14 +357,17 @@ body .options {
   background-size: cover;
   height: 50vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
   color: white;
 }
 @media (max-width: 800px) {
   body .options {
-    flex-direction: column;
+    display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
     background-image: none;
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   }
@@ -365,6 +375,7 @@ body .options {
 body .options .options-text {
   width: 60vw;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -377,7 +388,7 @@ body .options .options-text {
 body .options .options-text h3 {
   color: white;
   font-size: 6rem;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #2E2F38);
 }
 body .options .options-text p {
   max-width: 65ch;
@@ -385,13 +396,17 @@ body .options .options-text p {
 body .options .options-select {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
   margin-right: 30px;
 }
 @media (max-width: 800px) {
   body .options .options-select {
     margin-right: 0px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   }
 }
 body .options .options-select .rent {
@@ -402,6 +417,8 @@ body .options .options-select .rent {
     width: 40vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
 }
 body .options .options-select .lend {
@@ -412,16 +429,19 @@ body .options .options-select .lend {
     width: 40vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
 }
 body .team {
-  padding-top: 5vh;
+  padding-top: 7vh;
   height: 100vh;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  display: flex;
   flex-wrap: wrap;
+  display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   overflow: auto;
 }
 @media (max-width: 800px) {
@@ -431,8 +451,9 @@ body .team {
 }
 body .team .teamMember {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 18vw;
   animation: bounceIn 2s;
 }
@@ -464,10 +485,17 @@ body .team .teamMember img:hover {
     padding-top: 5vh;
   }
 }
+body .team .teamMember div img {
+  width: 5vw;
+  padding-top: 1vh;
+}
+body .team .teamMember div img:hover {
+  filter: invert(100%);
+}
 body .team h3 {
   font-size: 3rem;
   color: white;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #2E2F38);
   text-align: center;
 }
 body .testimonials {
@@ -476,6 +504,7 @@ body .testimonials {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 body .testimonials h3 {
   color: white;
@@ -489,7 +518,9 @@ body .testimonials h5 {
 }
 body .testimonials .test {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
   border-radius: 10px;
   width: 25vw;
   height: 30vh;

@@ -1,0 +1,19 @@
+.fullCenter(@direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: @direction
+}
+
+.flexProps(@justify, @align, @direction) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+
+.dropShadow(@px1, @px2, @px3, @color) {
+    filter: drop-shadow(@px1 @px2 @px3 @color)
+}
+
+
