@@ -415,8 +415,60 @@ body .options .options-select .lend {
   }
 }
 body .team {
+  padding-top: 5vh;
   height: 100vh;
-  background: #E9B40A;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow: auto;
+}
+@media (max-width: 800px) {
+  body .team {
+    padding-top: 10vh;
+  }
+}
+body .team .teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18vw;
+  animation: bounceIn 2s;
+}
+@media (max-width: 800px) {
+  body .team .teamMember {
+    width: 30vw;
+  }
+}
+@media (max-width: 500px) {
+  body .team .teamMember {
+    width: 80vw;
+  }
+}
+body .team .teamMember img {
+  width: 15vw;
+  filter: grayscale(100%);
+}
+body .team .teamMember img:hover {
+  filter: none;
+}
+@media (max-width: 800px) {
+  body .team .teamMember img {
+    width: 20vw;
+  }
+}
+@media (max-width: 500px) {
+  body .team .teamMember img {
+    width: 60vw;
+    padding-top: 5vh;
+  }
+}
+body .team h3 {
+  font-size: 3rem;
+  color: white;
+  filter: drop-shadow(5px 5px 5px #222);
+  text-align: center;
 }
 body .testimonials {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
