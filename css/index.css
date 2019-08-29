@@ -233,6 +233,10 @@ body .call2action .call2action-text h1 {
   color: white;
   filter: drop-shadow(5px 5px 5px #2E2F38);
 }
+body .call2action .call2action-text h2 {
+  padding: 3vh;
+  text-align: center;
+}
 body .features .top-features {
   height: 50vh;
   background-color: white;
