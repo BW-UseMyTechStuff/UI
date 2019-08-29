@@ -489,6 +489,16 @@ body .team .teamMember div img {
   width: 5vw;
   padding-top: 1vh;
 }
+@media (max-width: 800px) {
+  body .team .teamMember div img {
+    width: 8vw;
+  }
+}
+@media (max-width: 500px) {
+  body .team .teamMember div img {
+    width: 20vw;
+  }
+}
 body .team .teamMember div img:hover {
   filter: invert(100%);
 }
