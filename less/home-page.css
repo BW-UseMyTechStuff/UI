@@ -1,0 +1,21 @@
+body .call2action {
+  height: 100vh;
+  background: #e93c0a;
+  background: linear-gradient(0deg, #e93c0a 0%, #e96e0a 34%, #e9840a 75%);
+}
+body .features {
+  background-color: green;
+  height: 100vh;
+}
+body .options {
+  background-color: red;
+  height: 100vh;
+}
+body .testimonials {
+  background-color: green;
+  height: 100vh;
+}
+body .contact {
+  background-color: green;
+  height: 100vh;
+}
